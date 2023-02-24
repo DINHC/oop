@@ -14,3 +14,13 @@ class Dog:
         self.name = name
         self.age = age
 
+#A litte more complex/fun
+class Dragon: 
+    species = "Danger Fire Snek"
+
+    def __init__(self, name, age, ability, region, dangerlevel):
+        self.name = name 
+        self.age = age
+        self.ability = ability 
+        self.region = region 
+        self.dangerlevel = dangerlevel 
