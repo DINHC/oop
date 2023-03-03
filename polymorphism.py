@@ -1,4 +1,5 @@
 #Create parent class Ball
+#Polymorphism: ability to call the methods specific to each class being referred while not having to change the code
 class Ball:
   posX = 0
   posY = 0
