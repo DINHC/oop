@@ -1,0 +1,87 @@
+Defination: 
+    - Ability of an object to take on many forms
+    - the child or sub class object can be assigned to any class reference in its parent hierarchy and of course itself as well.
+
+Dynamic Polymorphism: 
+    - AKA: Run-Time polymorphism, dynamic binding, Run-Time binding, Late binding and Method Overriding
+
+
+Example(JAVACODE): 
+([
+    class Person {    
+        public void teach(){
+            System.out.println("Person can teach");
+        }
+    }
+
+    class Teacher extends Person {
+        public void teach() {
+        System.out.println("Teacher can teach in a school");
+        }
+    }
+
+    public class TestTeacher {
+        public static void main(String args[]) {
+            Person person = new Person(); //Person reference and object
+            Person another_person = new Teacher(); //Person reference, Teacher object
+            Teacher teacher = new Teacher(); //Teacher reference and obj.     
+            
+            person.teach();//output: Person can teach     
+            // Here you can see Teacher object's method is executed even-
+            // -though the Person reference was used  
+            another_person.teach();//output: Teacher can teach in a school      
+            
+            teacher.teach();//output: Teacher can teach in a school
+   }
+}
+])
+
+Static Polymorphism: 
+    - AKA: Compile-Time polymorphism, Static binding, Compile-Time binding, Early Binding, Method Overloading
+    - Having more than one method with the same method name but with different arguments 
+Example(JAVACODE): 
+
+In the example below, when calling the methods compiler compiler choose which method to call depending on the parameters passed when calling
+([
+    class Calculator {
+        void add(int a, int b) {                  <------parameter 1
+            System.out.println(a+b);
+        }
+        void add(int a, int b, int c) {           <------parameter 2
+            System.out.println(a+b+c);
+        }
+    }
+
+public class Demo {
+   public static void main(String args[]) {
+       Calculator calculator = new Calculator();       
+       
+       // method with 2 parameters is called
+       calculator.add(10, 20); //output: 30       
+       
+       // method with 3 parameters is called
+       calculator.add(10, 20, 30); //output: 60
+   }
+}
+])
+
+Benefits: 
+    1. EASY TO REUSE: You can take the existing code and add on to it. 
+    
+    
+    2. MORE FLEXIBILITY: You can set variables as read or write only 
+        - setName(), setAge() or to set variables as write-only then you only need to omit the get methods like getName(), getAge() etc.
+
+    3. HIDING DATA: Users will have no idea how classes are being implemented or stored. All they know is that values are being passed and initialized 
+
+Cons: 
+    1. CODE SIZE: The length of code increases drastically. Need to provide all the methods with specifiers 
+
+    2. MORE INSTRUCTIONS(related to code size): More instructions need to be typed out for each additional method 
+
+    3. INCREASED CODE EXECUTION: Code takes longer to run. 
+
+
+LINKS:
+
+https://medium.com/@shanikae/polymorphism-explained-simply-7294c8deeef7

@@ -41,3 +41,10 @@ Cons:
     2. MORE INSTRUCTIONS(related to code size): More instructions need to be typed out for each additional method 
 
     3. INCREASED CODE EXECUTION: Code takes longer to run. 
+
+
+LINKS:
+
+https://logicmojo.com/encapsulation-in-oops#6
+
+https://www.sumologic.com/glossary/encapsulation/

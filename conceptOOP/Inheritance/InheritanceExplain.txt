@@ -50,4 +50,8 @@ Cons:
     3. INCREASES TIME AND EFFORT TO JUMPT THROUGH DIFFERENT LEVELS OF INHERITANCE 
 
 
+LINKS: 
 
+https://eng.libretexts.org/Courses/Delta_College/C_-_Data_Structures/01%3A_OOP_Concepts/1.07%3A_OOP_Inheritance
+
+https://www.w3schools.com/php/php_oop_inheritance.asp
