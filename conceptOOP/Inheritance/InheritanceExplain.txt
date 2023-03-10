@@ -1,2 +1,53 @@
-- i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. 
+Defination: 
+    - When a Class derives from another class. 
+    - The main class is call the Supper or Base Class
+    - The class inheriting the properties is called the Sub or Derived Class
+
+Example: 
+The Strawberry class is inherited from the Fruit class.
+
+This means that the Strawberry class can use the public $name and $color properties as well as the public __construct() and intro() methods from the Fruit class because of inheritance.
+
+The Strawberry class also has its own method: message().
+([
+  class Fruit {
+  public $name;
+  public $color;
+  public function __construct($name, $color) {
+    $this->name = $name;
+    $this->color = $color;
+  }
+  public function intro() {
+    echo "The fruit is {$this->name} and the color is {$this->color}.";
+  }
+}
+
+> Strawberry is inherited from Fruit
+    class Strawberry extends Fruit {
+        public function message() {
+            echo "Am I a fruit or a berry? ";
+  }
+}
+])
+
+Benefits: 
+    1. EASY TO REUSE: You can take the existing code and add on to it. 
+    - i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. 
                By doing this, we are reusing the fields and methods of the existing class.
+    
+    2. MORE FLEXIBILITY
+
+    3. EASY TO DEBUG
+
+    4.CAN MAKE CODE SMALLER, EASIER TO READ (*This refers to the small chunk of code where the inheritance occurs. If the overall code gets too large this PRO may become invalid)
+
+Cons: 
+    1. CLASSES ARE DEPENDENT ON EACH OTHER
+        - If the base class is affected it cascades down. (Ex: you break the function in the base class)
+
+    2. IF FUNCTIONALITY IS DONE ON THE BASE CLASS THEN IT NEEDS TO BE APPLIED TO THE SUB CLASS AS WELL 
+
+    3. INCREASES TIME AND EFFORT TO JUMPT THROUGH DIFFERENT LEVELS OF INHERITANCE 
+
+
+
