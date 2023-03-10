@@ -16,3 +16,5 @@ class Ball:
 ball = Ball(20, 30, 40)
 
 print("The ball's position: x=%d, y=%d, z=%d" % (ball.x, ball.y, ball.z))
+
+#print(ball)
