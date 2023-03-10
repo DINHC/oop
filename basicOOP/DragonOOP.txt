@@ -1,3 +1,4 @@
+USED PYTHON REPL IN VS CODE 
 >>> Smaug = Dragon("Smaug", 948, "Fire Breathing, Flying, Keen Smell", "Lonely Mountains", 10)
 >>> Mushu = Dragon("Mushu", 300, "Fire Breathing(weak), Sassy, Voiced by Eddie Murphy", "Ancient China", 0.5)   
 >>> Shenron = Dragon("Shenron", 1000, "Flying, Wish-Granting", "Dragon Ball Universe", "Depends on the Wish")
