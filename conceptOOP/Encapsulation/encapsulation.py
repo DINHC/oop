@@ -1,5 +1,5 @@
 #Create a ball class
-#Encapsulation: putting an object suchas the player inside of another object
+#Encapsulation: putting an object such as the player inside of another object
 class Ball:
   x = 0
   y = 0

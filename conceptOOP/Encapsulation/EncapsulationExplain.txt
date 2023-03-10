@@ -1,0 +1,43 @@
+Defination: 
+    - A way to restrict data to some part of an object 
+    - A way to hide data members, data functions, or methods associated with an object or class 
+
+Example: 
+([
+    class Ball:                                 <----- The original class is Ball. Otherwise known as the Base or Super Class
+        x = 0
+        y = 0
+        z = 0
+
+    A function that moves the player's ball
+    def moveBall(self, x = 0, y = 0, z = 0):
+        self.x += x
+        self.y += y
+        self.z += z
+
+    #Create a player class
+    class Player:                              <----- The class Player (the Sub Class) is nested or placed inside of class Ball and is able to reference the class Ball and its code. 
+        The player has a ball
+        ball = Ball()
+
+    #A function to throw the player's ball     <----- This function is limited to the class Player 
+        def throwBall(self):
+    #Uses keyword arguments
+        self.ball.moveBall(x = 50)
+])
+
+Benefits: 
+    1. EASY TO REUSE: You can take the existing code and add on to it. 
+    
+    
+    2. MORE FLEXIBILITY: You can set variables as read or write only 
+        - setName(), setAge() or to set variables as write-only then you only need to omit the get methods like getName(), getAge() etc.
+
+    3. HIDING DATA: Users will have no idea how classes are being implemented or stored. All they know is that values are being passed and initialized 
+
+Cons: 
+    1. CODE SIZE: The length of code increases drastically. Need to provide all the methods with specifiers 
+
+    2. MORE INSTRUCTIONS(related to code size): More instructions need to be typed out for each additional method 
+
+    3. INCREASED CODE EXECUTION: Code takes longer to run. 
