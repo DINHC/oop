@@ -32,6 +32,6 @@ trek = Enterprise("Enterprise", 1000000000, 250)
 
 #print(isinstance(School_bus, Vehicle)) <--- use of the isintance with School_bus and Vehicle returns True. 
 
-# print(isinstance(trek, Vehicle)) <----- returns false, trek is made with Class SpaceShip not Vehicle
+#print(isinstance(trek, Vehicle)) <----- returns false, trek is made with Class SpaceShip not Vehicle
 
-print(trek)
+#print(trek) <--- originally printed out memory. With the def __str__ code, the print (trek) prints out he name of the Enterprise
